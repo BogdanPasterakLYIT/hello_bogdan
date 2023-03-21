@@ -10,3 +10,12 @@
 <!-- | number:'2.2-2' -->
 <!-- | date:'dd MM yyyy' -->
 <img [src]="image" alt="nic" />
+<hr />
+R<input
+  [(ngModel)]="colorR"
+  (change)="onChange()"
+  type="range"
+  min="0"
+  max="255"
+/>{{ colorR }}
+<div class="sqr" [style]="bg"></div>
