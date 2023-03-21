@@ -1,0 +1,9 @@
+<hr />
+<h2>Login</h2>
+<label for="name">Name :</label>
+<input [(ngModel)]="name" name="name" type="text" (keyup)="onKeyUp($event)" />
+<!-- ngModel from FormsModule -->
+<button type="submit" (click)="onClick()">Login</button>
+<hr />
+<p>{{ name }}</p>
+<img [src]="image" alt="nic" />
