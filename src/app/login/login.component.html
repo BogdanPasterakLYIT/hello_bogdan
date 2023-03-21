@@ -6,4 +6,7 @@
 <button type="submit" (click)="onClick()">Login</button>
 <hr />
 <p>{{ name }}</p>
+<p>Euro = {{ euro | currency : "EUR" }}</p>
+<!-- | number:'2.2-2' -->
+<!-- | date:'dd MM yyyy' -->
 <img [src]="image" alt="nic" />

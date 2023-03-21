@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'login',
@@ -6,8 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.component.css'],
 })
 export class LoginComponent {
-  name = 'Bogdan';
+  @Input()
+  name = '';
   image = 'assets/img/icon.png';
+  euro = 2.2;
 
   onClick() {
     console.log(this.name);
