@@ -9,7 +9,7 @@
 <p>Euro = {{ euro | currency : "EUR" }}</p>
 <!-- | number:'2.2-2' -->
 <!-- | date:'dd MM yyyy' -->
-<img [src]="image" alt="nic" />
+<img [src]="image" alt="nic" width="50px" />
 <hr />
 R<input
   [(ngModel)]="colorR"
@@ -19,3 +19,6 @@ R<input
   max="255"
 />{{ colorR }}
 <div class="sqr" [style]="bg"></div>
+<hr />
+<input type="number" [(ngModel)]="v" name="" id="" />
+<button (click)="run()" class="btn btn-primary">RUN</button>
